@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>craft</title>
+    <meta property="og:image" content="https://yoychen.github.io/v-craft/preview.png" />
+    <meta name="description" content="A Toolset for Building Extensible Page Builders with Vue.js">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<%= VUE_APP_GA %>"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '<%= VUE_APP_GA %>');
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but V-Craft doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
